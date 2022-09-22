@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>E-commerce website</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="main-nav">
+            <img class="logo" src="img/logo.jpg" alt="website logo">
+            <div class="search-box">
+                <input class="input-box" type="search" placeholder="Search here"> 
+                <button class="search-button" type="submit" >
+                    <ion-icon class="search-button" name="search-outline"></ion-icon>
+                </button>
+            </div>
+            <a href="http://localhost:8081/html/shoppingCart" class="productPage-link">
+                <ion-icon class="shopping-cart-icon" name="cart-outline"></ion-icon>
+            </a>
+        </nav>
+    </header>
+    <main>
+        <section class="product-section">
+            <div class="sort">
+                <select  id="sort-button" name="sort">
+                    <option selected="Sort by">Sort by</option>
+                    <option value="Ascending">Ascending</option>
+                    <option value="Descending">Descending</option>
+                </select>
+            </div>
+            <div id="card-container" class="grid"></div>
+            <template id="card-template">
+                <div class="card"> <!--id="card"-->
+                    <div class="img-div">
+                        <a href="" class="productPage-link">
+                            <img class="card-img" src="" alt="product image">
+                        </a>
+                    </div>
+                    <div class="product-text">
+                        <!-- <h2 class="product-heading"></h2> -->
+                        <div class="product-attributes">
+                            <h2 class="product-heading"></h2>
+                            <p class="card-category"></p>
+                            <p class="card-description"></p>
+                            <p class="card-price"></p>
+                        </div>
+                        <div class="button-div">
+                            <button class="theAddButton button button-add">Add to cart</button>
+                            <button class="theRemoveButton button button-remove">Remove from cart</button>
+                        </div>
+                    </div>
+                </div>
+            </template>
+        </section>
+    </main>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script type="module" src="./script.js"></script>
+</body>
+</html>

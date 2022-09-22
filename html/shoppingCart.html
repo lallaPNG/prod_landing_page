@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="/css/shoppingCart.css">
+    <link rel="stylesheet" href="/css/style.css">
+
+    <title>Shopping Cart</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="main-nav">
+            <img class="logo" src="/img/logo.jpg" alt="website logo">
+        </nav>
+    </header>
+    <section id="shopping-cart-container">
+        <div id="shopping-cart" class="grid-cart"></div>
+            <template id="shopping-cart-template">
+                <div class="shopping-cart-div"> 
+                    <div class="shopping-cart-img-div">
+                        <img class="cart-img-category" src="" alt="product image">
+                    </div>
+                    <div class="shopping-cart-category">
+                        <div class="shoping-cart-attributes">
+                            <h2 class="shoping-cart-heading"></h2>
+                            <p class="shopping-cart-discount"></p>
+                            <p class="shopping-cart-discounted-price"></p>
+                            <p class="shoping-cart-price"></p>
+                        </div>
+                        <div class="shopping-cart-button-div">
+                            <button class="theRemoveButton-cart button-cart button-remove-cart">Remove from cart</button>
+                        </div>
+                    </div>
+                </div>
+            </template>
+            
+    </section>
+    <h2 class="total-price">Total </h2>
+    <script type="module" src="/js/shoppingCart.js"></script>
+</body>
+</html>

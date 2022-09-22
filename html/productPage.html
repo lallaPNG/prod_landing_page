@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/productPage.css">
+    <link rel="stylesheet" href="/css/style.css">
+
+    <title>Product Detail Page</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="main-nav">
+            <img class="logo" src="/img/logo.jpg" alt="website logo">
+            <a href="http://localhost:8080/html/shoppingCart" class="productPage-link">
+            <ion-icon class="shopping-cart-icon" name="cart-outline"></ion-icon>
+            </a>
+        </nav>
+    </header>
+    <main>
+        <section class ="product-detail-section">
+            <div id="product-detail-card-container"></div>
+            <template id="product-detail-card-template">
+                <div class="product-detail-card grid-product-page"> <!--id="card"-->
+                    <div class="product-rest-of-images">
+                        <img class="secondary-img-1" src="" alt="main product image">
+                        <img class="secondary-img-2" src="" alt="main product image">
+                        <img class="secondary-img-3" src="" alt="main product image">
+                    </div>
+                    <div class="product-detail-img-div">
+                        <img class="main-card-img" src="" alt="main product image">
+                    </div>
+                    <div class="product-detail-product-text">
+                        <!-- <h2 class="product-heading"></h2> -->
+                        <div class="product-detail-attributes">
+                            <h2 class="product-detail-heading"></h2>
+                            <p class="card-detail-category"></p>
+                            <p class="card-detail-description"></p>
+                            <p class="card-detail-price"></p>
+                        </div>
+                        <div class="button-div">
+                            <button class="theAddButton-product button-product button-add-product">Add to cart</button>
+                            <button class="theRemoveButton-product button-product button-remove-product">Remove from cart</button>
+                        </div>
+                    </div>
+                </div>
+            </template>
+        </section>
+        <section class = "product-related-section">
+            <h2 class="sub-heading-category">Similar Products</h2>
+            <div id="card-container-same-category" class="grid-category"></div>
+            <template id="card-template-category">
+                <div class="card-category"> 
+                    <div class="img-div-category">
+                        <img class="card-img-category" src="" alt="product image">
+                    </div>
+                    <div class="product-text-category">
+                        <h2 class="product-heading"></h2>
+                        <div class="product-attributes-category">
+                            <h2 class="product-heading-category"></h2>
+                            <p class="card-detail-category"></p>
+                            <p class="card-price-category"></p>
+                        </div>
+                    </div>
+                </div>
+            </template>
+        </section>
+    </main>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script type="module" src="/js/scriptProductPage.js"></script>
+</body>
+</html>
